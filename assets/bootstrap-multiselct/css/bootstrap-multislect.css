@@ -1,0 +1,72 @@
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+/* .multiselect-container .input-group {
+    margin: 5px
+} */
+.multiselect-container>li {
+    padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+.multiselect-container>li>label.multiselect-group {
+    margin: 0;
+    padding: 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+.multiselect-container>li>a {
+    padding: 0
+}
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 20px 3px 40px
+}
+.multiselect-container>li>a>label.radio,
+.multiselect-container>li>a>label.mcheckbox {
+    margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px
+}
+.multiselect.dropdown-toggle::after {
+    content: "";
+     position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 18px;
+    /* font-family: 'Material Icons';
+    content: "chevron_right"; */
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f105";
+    border: none;
+    font-feature-settings: 'liga';
+    -webkit-font-feature-settings: 'liga';
+    -moz-font-feature-settings: 'liga';
+    -o-font-feature-settings: 'liga';
+    transform: rotate(90deg);
+    font-weight: 600;
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.btn-group button {
+    text-align: left;
+}
+.form-inline .multiselect-container label.mcheckbox,
+.form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.mcheckbox input[type=checkbox],
+.form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
